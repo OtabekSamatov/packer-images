@@ -11,10 +11,6 @@
       
       
       "source_ami_filter": { 
-        "filters": { 
-            "name": "state", 
-            "value": "available" 
-      }, 
         "owners": ["137112412989"], 
         "most_recent": true 
       }, 
