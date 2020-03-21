@@ -8,7 +8,17 @@
       "ssh_username": "ec2-user",
       "ssh_keypair_name": "packer",
       "ssh_private_key_file": "/home/centos/.ssh/id_rsa",
-      "source_ami": "ami-0fc61db8544a617ed", 
+      
+      
+      "source_ami_filter": { 
+        "filters": { 
+            "name": "state", 
+            "value": ["available"], 
+             
+      }, 
+        "owners": ["137112412989"], 
+        "most_recent": true 
+      }, 
       "ami_name": "golden-image {{timestamp}}"
     }],
     "provisioners": [ 
