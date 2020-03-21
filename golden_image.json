@@ -21,7 +21,11 @@
                 "sudo yum update -y"
             
             ]
-        }
+        }, 
+        { 
+            "type": "breakpoint", 
+            "note": "Wait for you to delete" 
+        } 
     ]
 }
   
